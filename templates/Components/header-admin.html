@@ -1,0 +1,56 @@
+<div class="btn_Menu">
+  <button id="btnMenu">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-list"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+      />
+    </svg>
+  </button>
+</div>
+
+<div>
+  <div class="header">
+    <div class="no_navbar" id="navbar">
+      {% if not login %}
+      <h1 class="logo">FLUFFYDRAGONS</h1>
+      {% endif %}
+
+      <nav>
+        <ul>
+          <p>Bienvenido, {{ session['usuario'] }}</p>
+          <form action="{{ url_for('logout') }}" method="GET">
+            <button type="submit" class="btn-cerrar-sesion">
+              <p class="">Cerrar sesión</p>
+            </button>
+          </form>
+          {%if not admin%}
+          <li><a href="/admin" class="texto_navegacion">Admin</a></li>
+          {%endif%} {% if not adminproyectos %}
+          <li>
+            <a href="adminproyectos" class="texto_navegacion"
+              >Añadir proyecto</a
+            >
+          </li>
+          {% endif %} {% if not comentarios %}
+          <li>
+            <a href="comentarios" class="texto_navegacion">Comentarios</a>
+          </li>
+          {% endif %} {% if not skills %}
+          <li>
+            <a href="skills" class="texto_navegacion">Añadir habilidades</a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+    <section class="zona1"></section>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+
+
+.Titulo-admin{
+    margin: 300px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f5c542;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2), -1px -1px 0 #ffcc00;
+}

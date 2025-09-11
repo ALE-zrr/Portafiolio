@@ -1,0 +1,31 @@
+{% extends "admin/inicio-admin.html" %}
+{% block content %}
+
+<div class="cuadro-proyectos">
+    <h1>Agregar Proyectos</h1>
+    <div>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="titulo">Título del Proyecto:</label><br>
+            <input type="text" id="titulo" name="titulo" required><br><br>
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+            <label for="imagen">Imagen del Proyecto:</label><br>
+            <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br>
+            <input type="submit" value="Agregar Proyecto">
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}

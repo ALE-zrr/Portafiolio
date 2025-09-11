@@ -1,0 +1,96 @@
+.Columnalogin {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 30px;
+}
+
+.iniciar {
+  font-family: "Anton", sans-serif;
+  font-size: 100px;
+  margin-top: 200px;
+  margin-left: 300px;
+  color: #f5c542;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2), -1px -1px 0 #ffcc00;
+}
+
+.sesion {
+  font-family: "Anton", sans-serif;
+  font-size: 70px;
+  margin-top: -30px;
+  color: #f5c542;
+  position: absolute;
+  left: 500px;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2), -1px -1px 0 #ffcc00;
+}
+
+.decoracioninicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-login {
+  margin-left: 70px;
+}
+
+.Login {
+  backdrop-filter: blur(10px);
+  box-shadow: #000000 0px 0px 10px, #000000 0px 0px 20px, #000000 0px 0px 30px,
+    #000000 0px 0px 40px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 190px;
+  margin-bottom: 120px;
+  display: flex;
+  margin-left: 50px;
+  justify-content: center;
+  margin-right: 300px;
+}
+
+.textologin {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+}
+
+.campologin {
+  color: white;
+  display: flex;
+  padding: 10px;
+  background-image: url(/static/Fondos/vector-gold-glittering-sparkle-stardust-on-black-background-with-bokeh-lights.jpg);
+}
+
+.botonlogin {
+  display: none;
+}
+
+.usuario-panel {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-cerrar-sesion {
+    margin-right: 20px;
+  background: linear-gradient(135deg, #b8860b, #ffd700); /* dorados */
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(184, 134, 11, 0.4);
+}
+
+.btn-cerrar-sesion:hover {
+  background: linear-gradient(135deg, #ffd700, #daa520);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(218, 165, 32, 0.6);
+}
+
+.btn-cerrar-sesion:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(184, 134, 11, 0.4);
+}
+
+

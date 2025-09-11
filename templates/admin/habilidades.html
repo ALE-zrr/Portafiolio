@@ -1,0 +1,60 @@
+{% extends "admin/inicio-admin.html" %} {% block content %}
+
+<div class="cuadro-habilidades">
+  <h1>Mis habilidades</h1>
+  <div>
+    <form action="/skills" method="POST">
+      <input
+        type="text"
+        name="habilidad"
+        placeholder="Nueva habilidad"
+        autocomplete="off"
+        required
+      />
+      <input
+        type="text"
+        name="descripcion"
+        placeholder="Descripción de la habilidad"
+        autocomplete="off"
+        required
+      />
+      <input
+        type="text"
+        name="svg"
+        placeholder="URL del SVG"
+        autocomplete="off"
+        required
+      />
+      <input type="submit" class="REGISTRAR" value="Registrar Habilidad" />
+    </form>
+  </div>
+</div>
+
+<div>
+  {% if habilidades %}
+  <div>
+    <div class="columnas">
+      {% for h in habilidades %}
+      <div class="cuadro_columnas">
+        <h2 class="titulo_habilidad">{{ h.Nombre }}</h2>
+        <p class="descripcion_habilidad">{{ h.Descripcion }}</p>
+        <div class="svg_habilidad">{{ h.Svg|safe }}</div>
+        <form
+          action="/eliminar_habilidad"
+          method="POST"
+          style="margin-top: 15px"
+        >
+          <input type="hidden" name="id" value="{{ h.id }}" />
+          <button type="submit" class="btn-cerrar-sesion">Eliminar</button>
+        </form>
+      </div>
+
+      {% endfor %}
+    </div>
+    {% else %}
+    <p>No hay habilidades registradas.</p>
+    {% endif %}
+  </div>
+</div>
+
+{%endblock %}

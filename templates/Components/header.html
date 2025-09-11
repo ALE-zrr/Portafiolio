@@ -1,0 +1,34 @@
+<div class="btn_Menu">
+  <button id="btnMenu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+    </svg>
+  </button>
+</div>
+
+<div>
+  <div class="header">
+    <div class="no_navbar" id="navbar">
+      {% if not login %}
+      <h1 class="logo">FLUFFYDRAGONS</h1>
+      {% endif %}
+      <nav>
+        <ul class="">
+          {%if not index%}
+          <li><a href="/" class="texto_navegacion">Inicio</a></li>
+          {%endif%} {% if not Acerca_de_mi %}
+          <li><a href="acercademi" class="texto_navegacion">¿Quien soy?</a></li>
+          {% endif %} {% if not Formulario %}
+          <li><a href="Formulario" class="texto_navegacion">Contactame</a></li>
+          {% endif %} {% if not Proyectos %}
+          <li><a href="Proyectos" class="texto_navegacion">Mis Proyectos</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+    <section class="zona1"></section>
+  </div>
+</div>
+

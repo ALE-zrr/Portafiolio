@@ -1,0 +1,60 @@
+.cuadro-habilidades {
+  margin: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.columnas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 50px;
+  padding: 30px;
+}
+
+.titulo_habilidad {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffd36b;
+  text-align: center;
+}
+
+.svg_habilidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffd36b;
+}
+
+.REGISTRAR {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  background: linear-gradient(135deg, #b8860b, #ffd700); /* dorados */
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(184, 134, 11, 0.4);
+}
+
+.REGISTRAR:hover {
+  background: linear-gradient(135deg, #ffd700, #daa520);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(218, 165, 32, 0.6);
+}
+
+.REGISTRAR:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(184, 134, 11, 0.4);
+}

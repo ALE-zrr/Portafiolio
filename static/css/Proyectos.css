@@ -1,0 +1,35 @@
+.ColumnasProyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+    padding: 10px;
+}
+
+.cadaProyecto {
+    border-radius: 8px;
+    padding: 15px;
+    margin: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: solid rgb(42, 30, 15) 2px;
+    backdrop-filter: blur(10px);
+}
+
+.ImagenProyectos {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cuadro-proyectos {
+    margin: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}

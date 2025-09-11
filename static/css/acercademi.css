@@ -1,0 +1,62 @@
+.contenedor-sobremi {
+  margin-top: 200px;
+}
+
+.Contenedor_acerca {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  border: 5px solid #ffd36b;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  line-height: 1.5;
+  font-size: 20px;
+  width: 90%;
+}
+
+.columna-acerca {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Imagen_perfil {
+  object-fit: cover;
+  width: 100%;
+  border: solid #ffd36b 5px;
+  border-radius: 30px;
+  background-color: #ffd36b54;
+}
+
+.PERFIL_CONTENIDO {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px;
+  border-radius: 30px;
+  width: 60%;
+  background-color: rgba(26, 18, 11, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: solid #ffd36b 5px;
+  color: #ffd36b;
+}
+
+.HOLA {
+  display: flex;
+  justify-content: first baseline;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  font-size: 100px;
+}
+
+.PERFILES {
+  display: flex;
+  justify-content: first baseline;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  font-size: 50px;
+  color: #ffd36b;
+}
